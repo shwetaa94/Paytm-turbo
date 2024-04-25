@@ -1,5 +1,10 @@
 import { Card } from "@repo/ui/card"
 
+interface providerType{
+    success?:"Success";
+    failure?:"Failure";
+    processing?: "Processing"
+}
 export const OnRampTransactions = ({
     transactions
 }: {
@@ -7,7 +12,7 @@ export const OnRampTransactions = ({
         time: Date,
         amount: number,
         // TODO: Can the type of `status` be more specific?
-        status: string,
+        status: providerType,
         provider: string
     }[]
 }) => {
