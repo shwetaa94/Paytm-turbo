@@ -38,7 +38,7 @@ export const SignUp = () => {
       <div className="w-full max-w-md">
         <Center>
           <div className="max-w-md w-full bg-white shadow-md px-8 pt-6 pb-8 mb-4 rounded-xl border border-gray-200">
-            <h1 className="text-3xl font-extrabold text-blue-400 text-center mb-4">
+            <h1 className="text-3xl font-extrabold text-[#6a51a6] text-center mb-4">
               Paytm Wallet
             </h1>
             <h2 className="text-xl font-semibold text-center mb-4">Sign Up</h2>
@@ -76,7 +76,7 @@ export const SignUp = () => {
 
             <div className="mt-6">
               <button
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline w-full"
+                className="bg-[#6a51a6] hover:bg-[#5f449e] text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline w-full"
                 type="button"
                 onClick={handleSignUp}
               >
@@ -86,7 +86,7 @@ export const SignUp = () => {
             <div className="text-center mt-4">
               <p>Already have an account?</p>
               <button
-                className="text-blue-500 hover:underline focus:outline-none"
+                className="text-[#6a51a6] hover:underline focus:outline-none"
                 onClick={() => router.push("/auth/signin")}
               >
                 Sign In

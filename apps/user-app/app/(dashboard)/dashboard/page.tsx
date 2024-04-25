@@ -32,7 +32,7 @@ export default async function () {
   return (
     <div className="w-full">
       <h1 className="text-3xl font-bold text-gray-900 mt-6">
-        <span className="text-blue-400">
+        <span className="text-[#6a51a6]">
           {greeting}! {name}
         </span>
       </h1>

@@ -16,7 +16,7 @@ export const Appbar = ({ user, onSignin, onSignout }: AppbarProps) => {
     <div className="flex justify-between border-b px-4">
       <div className="text-lg flex flex-col justify-center">
         <Link href="/">
-          <h1 className="text-3xl font-extrabold text-blue-400 text-center cursor-pointer">
+          <h1 className="text-3xl font-extrabold text-[#6a51a6] text-center cursor-pointer">
             PayTM
           </h1>
         </Link>
