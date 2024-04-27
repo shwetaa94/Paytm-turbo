@@ -19,8 +19,7 @@ export async function createOnRampTransaction(
   await prisma.onRampTransaction.create({
     data: {
       userId: Number(userId),
-      amount: amount * 100
-      ,
+      amount: amount * 100,
       status: "Processing",
       startTime: new Date(),
       provider,
