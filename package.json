@@ -23,6 +23,7 @@
     "packages/*"
   ],
   "dependencies": {
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "firebase": "^10.11.1"
   }
 }

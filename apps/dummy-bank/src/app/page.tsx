@@ -7,6 +7,9 @@ import toast from "react-hot-toast";
 
 const PaymentForm: React.FC = () => {
   const router = useRouter();
+  const [otp, setotp]=useState('');
+  const [confirmation, setconfirmation]=useState('');
+  const [otpSent, setotpSent]=useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
     phoneNumber: "",
@@ -14,6 +17,7 @@ const PaymentForm: React.FC = () => {
     creditCardNumber: "",
     cvv: "",
     expiryDate: "",
+    otp:""
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -92,6 +96,21 @@ const PaymentForm: React.FC = () => {
                 onChange={handleChange}
                 className="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
+
+              {
+              otpSent?(
+                <input
+                id="otp"
+                name="otp"
+                type="tel"
+                placeholder="Enter your phone number"
+                value={formData.otp}
+                onChange={handleChange}
+                className="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              ) : <button>Send Otp</button>
+              }
+              
             </div>
             <div className="flex flex-col">
               <label htmlFor="creditCardNumber" className="text-gray-600">

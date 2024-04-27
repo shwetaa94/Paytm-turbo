@@ -28,12 +28,11 @@ export const Transactions = ({
             <div className="text-slate-600 text-xs">
               {t.time.toDateString()}
             </div>
-            <div
-              className="flex flex-col"
-              style={{ color: t.positive ? "green" : "red" }}
-            >
-              {t.positive ? "+" : "-"} Rs {t.amount / 100}
-            </div>
+            <div className="flex flex-col">
+      <span style={{ color: t.positive ? 'green' : 'red' }}>
+        {t.positive ? "+" : "-"} Rs {t.amount / 100}
+      </span>
+    </div>
           </div>
         </div>
       ))}
