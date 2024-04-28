@@ -3,7 +3,10 @@
 The Wallet App is a web application inspired by platforms like Paytm, designed to facilitate seamless financial transactions between users and merchants. This project utilizes a modern tech stack and focuses on providing a secure, user-friendly experience for managing digital finances.
 
 
-https://github.com/shwetaa94/Paytm-turbo/assets/110349627/6d3b905a-72a0-4dab-ac01-fd317d138def
+
+https://github.com/shwetaa94/Paytm-turbo/assets/110349627/adb0afcc-933d-4f2d-9098-3b495e720b35
+
+
 
 
 ## Features
@@ -35,6 +38,7 @@ https://github.com/shwetaa94/Paytm-turbo/assets/110349627/6d3b905a-72a0-4dab-ac0
 - **Authentication**:
   - Phone number OTP validation
   - OAuth sign-ins for merchants
+  - firebase anf nextauth
   
 ## Installation
 
