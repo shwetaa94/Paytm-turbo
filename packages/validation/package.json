@@ -3,12 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "exports": {
-    "./otpvalidation": "./src/otpvalidation.ts"
+    "./otpvalidation": "./src/otpvalidation.ts",
+    "./sendotp": "./src/actions/sendotp.ts",
+    "./verifyotp": "./src/actions/verifyotp.ts"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx esbuild ./src/otpvalidation.ts --bundle --platform=node --outfile=dist/index.js",
+    "start": "node dist/index.js",
+    "dev": "npm run build && npm run start"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
 }
